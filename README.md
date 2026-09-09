@@ -53,6 +53,7 @@ Angreifer.
 - Projektfläche: [wunderglobe.com/stachelschwein](https://wunderglobe.com/stachelschwein)
 - Simulation: [wunderglobe.com/play](https://wunderglobe.com/play), PLAY GAMES, SIM STACHELSCHWEIN
 - Argument im Magazin: [wunderglobe.com/mag/projekt-stachelschwein](https://wunderglobe.com/mag/projekt-stachelschwein)
+- McGrinsey-Magazin: [mcgrinsey.com/magazin/projekt-stachelschwein](https://mcgrinsey.com/magazin/projekt-stachelschwein/)
 
 Stachelschwein ist ein Unterprojekt von Wunderglobe. Hier liegt der offene Code.
 
