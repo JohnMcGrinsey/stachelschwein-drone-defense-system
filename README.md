@@ -35,16 +35,26 @@ Die Plattform ist offen für Plug-and-play verschiedener Sensor- und Drohnensyst
 ein Mikrofonarray, ein Radar oder eine Abfangdrohne mitbringt, schreibt einen Adapter gegen das
 Protokoll und ist Teil des Netzes.
 
+## Lesen
+
+Die Projektfläche, auf der das System gebaut wird, steht unter
+[wunderglobe.com/stachelschwein](https://wunderglobe.com/stachelschwein). Scanner, System, Teilekatalog,
+Lieferkette, Haustest, Andockpunkte. Deutsch unter `/stachelschwein/de`.
+
+Dieses Repository ist der Spiegel: Protokoll, Hardware-Minima, Systementwurf, Teileliste. Apache-2.0.
+Lesen darf jeder. Die Fläche zum Durchklicken ist die Website, nicht GitHub.
+
 ## Simulation
 
-Du kannst dir das System ansehen, bevor es Hardware gibt. Im Wunderglobe läuft eine Simulation des
-Frankfurt-Szenarios: Sensoren auf den Dächern, eine Angriffswelle auf Knopfdruck, Triangulation,
-Startfreigabe, zehn koordinierte Abfangdrohnen pro Angreifer.
+Im Wunderglobe läuft eine Simulation des Frankfurt-Szenarios: Sensoren auf den Dächern, eine
+Angriffswelle auf Knopfdruck, Triangulation, Startfreigabe, zehn koordinierte Abfangdrohnen pro
+Angreifer.
 
-- Simulation: [wunderglobe.com/play](https://wunderglobe.com/play), unter PLAY GAMES, PROJEKT STACHELSCHWEIN
-- Artikel und Hintergrund: [wunderglobe.com/mag/projekt-stachelschwein](https://wunderglobe.com/mag/projekt-stachelschwein)
+- Projektfläche: [wunderglobe.com/stachelschwein](https://wunderglobe.com/stachelschwein)
+- Simulation: [wunderglobe.com/play](https://wunderglobe.com/play), PLAY GAMES, SIM STACHELSCHWEIN
+- Argument im Magazin: [wunderglobe.com/mag/projekt-stachelschwein](https://wunderglobe.com/mag/projekt-stachelschwein)
 
-Die inhaltliche Heimat des Projekts ist Wunderglobe. Hier liegt der Code.
+Stachelschwein ist ein Unterprojekt von Wunderglobe. Hier liegt der offene Code.
 
 ## Haltung
 

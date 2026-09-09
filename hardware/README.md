@@ -22,5 +22,10 @@ besser und teurer, und gehört auf die zweite Schicht.
 
 ## Adapter
 
-Ein Adapter übersetzt zwischen einem konkreten Geraet und dem Protokoll. Er gehört in dieses
-Repository, damit ein zweiter Betreiber dasselbe Geraet ohne Rückfrage anschließen kann.
+Ein Adapter übersetzt zwischen einem konkreten Gerät und dem Protokoll. Er gehört in dieses
+Repository, damit ein zweiter Betreiber dasselbe Gerät ohne Rückfrage anschließen kann.
+
+## Erste Ernte
+
+`parts.json` ist der wilde Katalog (Scanner, Gehirn, Funk, Akustik, Radar, Abfang, Testziele),
+noch ungerankt. Lesbar unter [wunderglobe.com/stachelschwein/parts](https://wunderglobe.com/stachelschwein/parts).
