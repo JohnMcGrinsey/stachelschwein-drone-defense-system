@@ -1,0 +1,116 @@
+{
+  "product": "Stachelschwein DDS Scanner v0.1",
+  "short": "SCANNER-v0.1",
+  "updated": "2026-09-09",
+  "shop": "https://www.reichelt.de",
+  "goal": "Highest listen range that still fits a citizen roof and a Reichelt cart. Listen only. Nothing flies.",
+  "ears": [
+    {
+      "id": "rid",
+      "en": "Ear 1 · Remote ID",
+      "de": "Ohr 1 · Remote ID",
+      "what": "One radio. Bluetooth and Wi-Fi broadcast of EU Direct Remote ID (EN 4709-002). Not four streams. One ear.",
+      "range_hyp_m": [400, 1500],
+      "range_note": "Open field, external 2 dBi antenna, line of sight. Urban street canyon much less. Not measured on our roof yet."
+    },
+    {
+      "id": "acoustic",
+      "en": "Ear 2 · Acoustic array",
+      "de": "Ohr 2 · Akustik-Array",
+      "what": "Four MEMS capsules making ONE stream. They are not four cameras. Together they raise signal-to-noise and can guess a direction. Fibre-optic FPV has no radio. This is the ear for that.",
+      "range_hyp_m": [80, 250],
+      "range_note": "ReSpeaker vendor sheet says 5 m for speech. A DJI-class rotor is louder and tonal. Suburban quiet, roof height: 80 to 250 m is the working hypothesis. City noise eats that."
+    }
+  ],
+  "later": [
+    { "id": "rf", "en": "Ear 3 · Broadband RF", "de": "Ohr 3 · Breitband-Funk", "when": "v0.2", "note": "HackRF-class. RTL-SDR cannot hear 2.4 GHz." },
+    { "id": "optical", "en": "Ear 4 · Camera confirm", "de": "Ohr 4 · Kamera-Zeuge", "when": "v0.2", "note": "Pi Camera Module 3 looking up. Never first detector." }
+  ],
+  "brain": {
+    "id": "pi5",
+    "role": "Node brain. Needs 5 V / 5 A. Sends DETECTION over HTTPS to the Wunderglobe central.",
+    "sends_to": "https://wunderglobe.com/stachelschwein/api/join and later /stachelschwein/api/detect"
+  },
+  "items": [
+    {
+      "id": "pi5-4gb",
+      "name": "Raspberry Pi 5 B 4 GB",
+      "sku": "RASP PI 5 B 4GB",
+      "shop": "https://www.reichelt.de/de/de/shop/produkt/raspberry_pi_5_b_4x_2_4_ghz_4_gb_ram_wlan_bt-359842",
+      "price_eur": 121,
+      "qty": 1,
+      "role_en": "Brain. Designed Cambridge, built Pencoed, Wales.",
+      "role_de": "Gehirn. Entwurf Cambridge, Bau Pencoed, Wales."
+    },
+    {
+      "id": "psu",
+      "name": "Raspberry Pi 27 W USB-C PSU 5.1 V / 5 A",
+      "sku": "in RPI 5B 4GB Black Bundle, or official 27W",
+      "shop": "https://www.reichelt.de/de/de/shop/produkt/das_raspberry_pi_5_b_4gb_black_bundle-362101",
+      "price_eur": 14,
+      "qty": 1,
+      "role_en": "Power. The Pi 5 wants 5 A. A phone charger will throttle it.",
+      "role_de": "Strom. Der Pi 5 will 5 A. Ein Handy-Lader drosselt ihn."
+    },
+    {
+      "id": "sd",
+      "name": "microSD 64 GB Class 10",
+      "sku": "generic Reichelt Class 10",
+      "shop": "https://www.reichelt.de",
+      "price_eur": 12,
+      "qty": 1,
+      "role_en": "OS and logs.",
+      "role_de": "Betriebssystem und Logs."
+    },
+    {
+      "id": "respeaker",
+      "name": "Seeed ReSpeaker XVF3800 4-Mic with ESP32-S3",
+      "sku": "RESP AI 4MIC ESP",
+      "shop": "https://www.reichelt.de/de/de/shop/produkt/respeaker_xmos_xvf3800_ai-powered_4_mic_mit_esp32-416307",
+      "price_eur": 58,
+      "qty": 1,
+      "role_en": "Ear 2. Four MEMS, beamforming, direction of arrival, USB to the Pi. Vendor speech range 5 m. Rotor range is the open measurement.",
+      "role_de": "Ohr 2. Vier MEMS, Beamforming, Peilung, USB an den Pi. Hersteller: 5 m Sprache. Rotorreichweite ist die offene Messung."
+    },
+    {
+      "id": "esp32-u",
+      "name": "ESP32-S3-MINI-1U-N8 (IPEX antenna)",
+      "sku": "ESP32-S3MINI1UN8",
+      "shop": "https://www.reichelt.de/de/de/shop/produkt/modul_wifi_802_11_2_4ghz_150mb_s_-364567",
+      "price_eur": 4,
+      "qty": 1,
+      "role_en": "Ear 1 radio. External antenna connector. This is the range lever for Remote ID.",
+      "role_de": "Ohr-1-Funk. Buchse für Außenantenne. Das ist der Reichweitenhebel für Remote ID."
+    },
+    {
+      "id": "ant",
+      "name": "2.4 / 5.8 GHz omni 2 dBi, U.FL, 108 mm",
+      "sku": "RPI CM4 UFL",
+      "shop": "https://www.reichelt.de/de/de/shop/produkt/raspberry_pi_-_compute_modul_4_5_antenne_2_4ghz_5_8ghz-290554",
+      "price_eur": 5,
+      "qty": 1,
+      "role_en": "Put this outside the box. A PCB antenna inside an IP65 shell is a waste of the radio.",
+      "role_de": "Die gehört nach draußen. Eine Leiterplattenantenne in einer IP65-Dose ist verschenkter Funk."
+    },
+    {
+      "id": "box",
+      "name": "IP65 outdoor enclosure, vented",
+      "sku": "estimate, Reichelt Gehäuse IP65",
+      "shop": "https://www.reichelt.de",
+      "price_eur": 20,
+      "qty": 1,
+      "role_en": "Weather. Drain holes. Mast clamp. Antenna gland.",
+      "role_de": "Wetter. Drainagelöcher. Mastschelle. Antennenstopfen."
+    },
+    {
+      "id": "cables",
+      "name": "USB-C and Ethernet 5 m",
+      "sku": "generic",
+      "shop": "https://www.reichelt.de",
+      "price_eur": 12,
+      "qty": 1,
+      "role_en": "Power in, detections out through the house router to Wunderglobe.",
+      "role_de": "Strom rein, Detektionen raus über den Hausrouter nach Wunderglobe."
+    }
+  ]
+}

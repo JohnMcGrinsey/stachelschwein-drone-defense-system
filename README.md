@@ -38,8 +38,8 @@ Protokoll und ist Teil des Netzes.
 ## Lesen
 
 Die Projektfläche, auf der das System gebaut wird, steht unter
-[wunderglobe.com/stachelschwein](https://wunderglobe.com/stachelschwein). Scanner, System, Teilekatalog,
-Lieferkette, Haustest, Andockpunkte. Deutsch unter `/stachelschwein/de`.
+[wunderglobe.com/stachelschwein](https://wunderglobe.com/stachelschwein). Erstes benanntes Produkt:
+**Stachelschwein DDS Scanner v0.1** (Stückliste, 3D-Unit, Zentrale). Deutsch unter `/stachelschwein/de`.
 
 Dieses Repository ist der Spiegel: Protokoll, Hardware-Minima, Systementwurf, Teileliste. Apache-2.0.
 Lesen darf jeder. Die Fläche zum Durchklicken ist die Website, nicht GitHub.
